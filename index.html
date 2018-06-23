@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TodoList</title>
+</head>
+<body class="clearfix">
+    <aside>
+        <ul>
+            <li class="add">
+                <img src="img/plus.png" alt="">
+                <div class="tooltip">Ajouter</div>
+            </li>
+            <!-- <li class="delete-all">
+                <img src="img/delete-forever.png" alt="">
+                <div class="tooltip">Tout effacer</div>
+            </li> -->
+            <!-- <li class="surprise">
+                <img src="img/surprise.png" alt="">
+                <div class="tooltip">Surprise</div>
+            </li> -->
+            <li class="add-s">
+                <img src="img/web.png" alt="">
+                <div class="tooltip">Ajoute un site</div>
+            </li>
+            <li class="add-s">
+                <a href="https://www.facebook.com/messages" target="_blank">
+                    <img src="img/facebook-messenger.png" alt="">
+                </a>
+                <div class="tooltip">Messenger</div>
+            </li>
+            <!-- <li class="settings">
+                <img src="img/settings.png" alt="">
+                <div class="tooltip">Réglages</div>
+            </li> -->
+        </ul>
+        <div class="form">
+            <form>
+                <div class="close">
+                    <img src="img/close.png" alt="">
+                </div>
+                <textarea name="addtask" cols="30" rows="10"></textarea>
+                <input class="input" type="datetime-local">
+                <input class="input" type="text" placeholder="Catégorie">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div class="formedit">
+            <form>
+                <div class="close-edit">
+                    <img src="img/close.png" alt="">
+                </div>
+                <textarea name="edittask" cols="30" rows="10"></textarea>
+                <input class="input" type="datetime-local">
+                <input class="input" type="text">
+                <input id="edit-local-storage" type="submit" value="Modifier">
+                <input id="delete-task" type="submit" value="Supprimer">
+            </form>
+        </div>
+        <div class="formedit-f">
+            <form>
+                <div class="close-edit-f">X</div>
+                <textarea name="edittask-f" cols="30" rows="10"></textarea>
+                <input class="input" type="datetime-local">
+                <input class="input" type="text">
+                <input id="edit-local-storage-f" type="submit" value="Modifier">
+                <input id="delete-task-f" type="submit" value="Supprimer">
+            </form>
+        </div>
+        <div class="edit-category">
+            <div class="close-edit-category">X</div>
+            <ul>
+                
+            </ul>
+        </div>
+    </aside>
+    <div class="blur"></div>
+    <div class="s-add-popup">
+        <div class="close-popup">
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="wrap">
+            <div class="inner-wrapper">
+                <label for="nomdusite">Ajoute le nom de ton site</label>
+                <input id="nomdusite" type="text" placeholder="Nom du site">
+            </div>
+            <div class="inner-wrapper">
+                <label for="urldusite">Ajoute l'adresse web</label>
+                <input id="urldusite" type="text " placeholder="URL du site" value="http://www.">
+                <div class="tooltip">http://www.lenomdusite.com ou https://www.lenomdusite.com</div>
+            </div>
+            <div class="inner-wrapper">
+                <input type="submit" value="Ajouter">
+            </div>
+        </div>
+    </div>
+    <div class="s-popin">
+        <div class="close-popin">
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="wrapper un">
+            <input type="text">
+        </div>
+        <div class="wrapper deux">
+            <input type="text">
+        </div>
+        <div class="wrapper trois">
+            <input type="submit">
+        </div>
+        <div class="wrapper quatre">
+            <input type="submit" value="Supprimer">
+        </div>
+    </div>
+    <div class="sites">
+        <p class="titre"></p>
+    	<ul id="sortable" class="clearfix">
+            
+        </ul>
+    </div>
+    <!-- <div class="settings open">
+        <div class="close-settings">
+            <img src="img/close.png" alt="">
+        </div>
+        <p class="plus">plus</p>
+        <p class="minus">moins</p>
+    </div> -->
+    <main>
+        <div class="categories">
+            <p class="list"></p>
+        	<div class="close-list">X</div>
+            <ul>
+            
+            </ul>
+        </div>
+        <div class="task">
+            <ul class="clearfix">
+
+            </ul>
+        </div>
+        <div class="task-filtered">
+            <ul class="clearfix">
+
+            </ul>
+        </div>
+    </main>
+    <div class="firststart">
+        <!-- <div class="close-start">
+            <img src="img/close.png" alt="">
+        </div> -->
+
+        <div class="container">
+            <ul class="slider clearfix">
+                <li>
+                    <div class="close-start">
+                        <img src="img/close.png" alt="">
+                    </div>             
+                    <div class="content">
+                        <p>Bienvenue à toi !</p>
+                        <p>Ici, tu pourra :</p>
+                        <ul class="clearfix">
+                            <li>- Personnaliser l'accueil de ton navigateur</li>
+                            <li>- Gérer tes listes de tâches à faire</li>
+                            <li>- Les afficher par catégories</li>
+                            <li>- Créer une liste de tes sites préférés</li>
+                        </ul>
+                        <p>Quelques exemples en images</p>
+                        <div class="arrow">
+                            <img class="left" src="img/arrow-left.png" alt="">
+                            <img class="right" src="img/arrow-right.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="close-start">
+                        <img src="img/close.png" alt="">
+                    </div> 
+                    <div class="content">
+                        <div class="img">
+                            <img src="img/menu.jpg" alt="">
+                        </div>
+                        <div class="arrow">
+                            <img class="left" src="img/arrow-left.png" alt="">
+                            <img class="right" src="img/arrow-right.png" alt="">
+                        </div>  
+                    </div>
+                </li>
+                <li>
+                    <div class="close-start">
+                        <img src="img/close.png" alt="">
+                    </div> 
+                    <div class="content">
+                        <div class="img">
+                            <img src="img/draganddrop.jpg" alt="">
+                        </div>
+                        <div class="arrow">
+                            <img class="left" src="img/arrow-left.png" alt="">
+                            <img class="right" src="img/arrow-right.png" alt="">
+                        </div>  
+                    </div>
+                </li>
+                <!-- <li>
+                    <p>Bienvenue à toi !</p>
+                    <p>On te fais visiter ?</p>
+                    
+                    <ul>
+                        <li>Tu pourra personnaliser l'accueil de ton navigateur :</li>
+                        <li>- En créant et en gérant tes listes de tâches à faire</li>
+                        <li>- Les afficher par catégories</li>
+                        <li>- En créant une liste de tes sites préférés pour y accéder rapidement</li>
+                    </ul>
+                    <div class="arrow">
+                        <img class="left" src="img/arrow-left.png" alt="">
+                        <img class="right" src="img/arrow-right.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <p>Un petit aperçu de ce que tu peux faire ici !</p>
+                    <div>
+                        <img src="img/menu.jpg" alt="">
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+<script src="main/jquery-3.2.1.js"></script>
+<script src="main/jquery-ui.js"></script>
+<script src="main/main.js"></script>
+
+</body>
+</html>

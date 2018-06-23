@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "TodoList",
+  "version": "1.0",
+  "description": "Prend tes notes ici !",
+  "icons": {
+    "128": "img/icon_128.png"
+  },
+  "permissions": [
+    "tabs",
+    "unlimitedStorage"
+  ],
+  "background": {
+    "scripts": ["main/main.js"]
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

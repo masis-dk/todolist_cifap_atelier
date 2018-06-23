@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<input type="datetime-local">
+<input type="submit">
+<p></p>
+
+<body>
+    <script>
+	function getTimeRemaining (endtime) {
+		let t = new Date(endtime) - new Date();
+    	let seconds = Math.floor( (t/1000) % 60 );
+    	let minutes = Math.floor( (t/1000/60) % 60 );
+    	let hours = Math.floor( (t/(1000*60*60)) % 24 );
+    	let days = Math.floor( t/(1000*60*60*24) );
+		return {
+	        'total': t,
+	        'days': days,
+	        'hours': hours,
+	        'minutes': minutes,
+	        'seconds': seconds
+		};	
+	}
+
+
+	let input = document.querySelector('input[type="datetime-local"]');
+	let submit = document.querySelector('input[type="submit"]');
+	
+	submit.addEventListener('click', () => {
+		
+		let final = Date.parse(input.value);
+		let date = Date.parse(new Date());
+
+		var timeInterval = setInterval(function(){
+	   		let dead = getTimeRemaining(final);
+		   	let p = document.querySelector('p');
+		   	p.innerHTML = 	'<div>'+ dead.days +'</div>' +
+		   					'<div>'+ dead.hours +'</div>' +
+		   					'<div>'+ dead.minutes +'</div>' +
+		   					'<div>'+ dead.seconds +'</div>';
+			if (dead.total <= 0) {
+				console.log('wesh');
+				 clearInterval(timeInterval);
+				 p.innerHTML = 	'<div>0</div>' +
+		   						'<div>0</div>' +
+		   						'<div>0</div>' +
+		   						'<div>0</div>';
+				}
+		}, 1000);
+
+
+	});
+
+    </script>
+</body>
+
+</html>

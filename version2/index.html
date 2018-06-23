@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Do it !</title>
+</head>
+<body class="clearfix">
+<div class="menu">
+    <ul>
+        <li>
+            <img class="open open-form-one" src="img/plus.png" alt="">
+        </li>
+        <li>
+            <img class="open open-form-two" src="img/web.png" alt="">
+        </li>
+        <li>
+            <img src="img/facebook-messenger.png" alt="">
+        </li>
+        <li>
+            <img class="resize" src="img/resize.png" alt="">
+        </li>
+    </ul>
+</div>
+<!-- formulaire ajout d'une tâche à faire -->
+<div class="form-one">
+    <form action="">
+        <div class="close">
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="wrapper">
+            <label for="task">Ajoute une tâche à faire</label>
+            <textarea name="task" id="task" cols="30" rows="10" placeholder="Ajouter une tâche"></textarea>
+        </div>
+        <div class="wrapper">
+            <label for="date">Date de fin</label>
+            <input type="datetime-local" id="date">
+        </div>
+        <div class="wrapper">
+            <label for="categorie">Attribuer une catégorie</label>
+            <input type="text" id="categorie" placeholder="Ajouter une catégorie">
+        </div>
+        <div class="wrapper">
+            <input type="submit" placeholder="Ajouter">
+        </div>
+    </form>
+</div>
+<!-- formulaire de modification d'une tâche -->
+<div class="form-two">
+    <form action="">
+        <div class="close">
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="wrapper">
+            <label for="edit-task">Modifier une tâche</label>
+            <textarea name="edit-task" id="edit-task" cols="30" rows="10" placeholder="Ajouter une tâche"></textarea>
+        </div>
+        <div class="wrapper">
+            <label for="edit-date">Date de fin</label>
+            <input type="datetime-local" id="edit-date">
+        </div>
+        <div class="wrapper">
+            <label for="edit-categorie">Modifier la catégorie</label>
+            <input type="text" id="edit-categorie" placeholder="Modifier une catégorie">
+        </div>
+        <div class="wrapper">
+            <input type="submit" placeholder="Ajouter">
+        </div>
+    </form>
+</div>
+<!-- formulaire ajout site -->
+<div class="form-add-site">
+    <form action="">
+        <div class="close">
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="wrapper">
+            <label>Ajouter un site</label>
+        </div>
+        <div class="wrapper">
+            <label for="add-site">Le nom de ton site</label>
+            <input type="text" id="add-site" placeholder="Nom du site">
+        </div>
+        <div class="wrapper">
+            <label for="add-url">L'URL de ton site</label>
+            <input type="text" id="add-url" placeholder="URL du site">
+        </div>
+        <div class="wrapper">
+            <input type="submit" value="Ajouter">
+        </div>
+    </form>
+</div>
+<!-- formulaire modification site -->
+<div class="form-edit-site">
+    <form action="">
+        <div class="close">
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="wrapper">
+            <label>Ajouter un site</label>
+        </div>
+        <div class="wrapper">
+            <label for="edit-site">Le nom de ton site</label>
+            <input type="text" id="edit-site" placeholder="Nom du site">
+        </div>
+        <div class="wrapper">
+            <label for="edit-url">L'URL de ton site</label>
+            <input type="text" id="edit-url" placeholder="URL du site">
+        </div>
+        <div class="wrapper">
+            <input type="submit" value="Ajouter">
+        </div>
+    </form>
+</div>
+
+<!-- les sites internet -->
+<div class="sites">
+    <p>Mes sites</p>
+    <nav>
+        <ul class="clearfix">
+            <li>
+                <div class="edition">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <a href="#">
+                    <img src="" alt="">
+                    <p>nom du site</p>
+                </a>
+            </li>
+            <li>
+                <div class="edition">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <a href="#">
+                    <img src="" alt="">
+                    <p>nom du site</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- les notes -->
+<div class="notes">
+    <p>Mes notes</p>
+    <nav>
+        <p>Mes catégories</p>
+        <ul class="categories clearfix">
+            <li>un</li>
+            <li>deux</li>
+            <li>trois</li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="taches clearfix">
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+            <li>
+                <img src="img/list-check.png" alt="">
+                <img src="img/tooltip-edit.png" alt="">
+                <div class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas maiores ex nostrum et voluptatibus. Accusantium repudiandae mollitia esse excepturi perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga enim architecto omnis ab unde eligendi aspernatur consectetur explicabo quas voluptatibus recusandae at sequi, eaque et necessitatibus quisquam quidem est dolore vitae quia quasi doloremque natus nesciunt, aut eius? Vero, saepe.</div>
+                <div class="category">Catégorie</div>
+                <div class="countdown">1 day 12 hours 32 minuts 23 seconds</div>
+            </li>
+        </ul>
+    </nav>
+</div>
+<script src="main/main.js"></script>
+</body>
+</html>
